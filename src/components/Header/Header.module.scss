@@ -1,0 +1,36 @@
+.header {
+    position: relative;
+    max-height: 120px;
+
+    background-color: #fff;
+
+    .headerDotted {
+        position: absolute;
+        top: -22px;
+        left: 20px;
+
+        height: 20px;
+
+        font-size: 24px;
+    }
+
+    .headerInfo {
+        max-height: 100px;
+        margin-top: 20px;
+        padding: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        border-top: 2px solid #000;
+
+        .headerInfoLogo {
+            display: flex;
+            align-items: center;
+
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}
