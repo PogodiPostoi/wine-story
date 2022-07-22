@@ -1,7 +1,18 @@
 import React from "react";
+
+import Dropdown from "../Dropdown";
+
 import styles from "./Header.module.scss";
 
 function Header() {
+    const headerWineList = ["White", "Red", "Pink", "Other"]
+    const headerSparklingList = ["One", "Two", "Three", "Four"]
+    const headerWhiskeyList = ["One", "Two", "Three", "Four"]
+    const headerStrongList = ["One", "Two", "Three", "Four"]
+    const headerBeerList = ["One", "Two", "Three", "Four"]
+    const headerAccessoriesList = ["One", "Two", "Three", "Four"]
+
+
     return (
         <div className={styles.header}>
             <div className={styles.headerDotted}>
@@ -14,7 +25,7 @@ function Header() {
                 </div>
                 <div className={styles.headerInfoSearch}>
                     <input placeholder="search"/>
-                    <img src="/img/arrow.png" alt="arrow" 
+                    <img src="/img/search-arrow.png" alt="arrow" 
                         width={20} 
                         height={20}
                     />
@@ -23,7 +34,6 @@ function Header() {
                     <a href="tel:+76660852969">(666)085 29 69</a>
                 </div>
                 <div className={styles.headerInfoCurrency}>
-                    {/*TODO: Заменить выпадающие списки с select на окно поверх + выбор ссылки */}
                     <select name="currency" id="#">
                         <option value="1">rur</option>
                         <option value="2">usd</option>
@@ -35,63 +45,46 @@ function Header() {
                 <div>cart</div>
             </div>
             <div className={styles.headerList}>
-                <div>
-                    <select name="wine" id="#">
-                        <option hidden>WINE</option>
-                        <option value="1">White</option>
-                        <option value="2">Red</option>
-                        <option value="3">Pink</option>
-                        <option value="4">Other</option>
-                    </select>
+                <div className={styles.headerListItem}>
+                    {/*TODO: Заменить выпадающие списки с select на окно поверх + выбор ссылки */}
+                    <Dropdown
+                        itemList={headerWineList}
+                        btnName={"wine"}
+                    />
                 </div>
-                <div>
-                    <select name="sparkling" id="#">
-                        <option hidden>SPARKLING</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                    </select>
+                <div className={styles.headerListItem}>
+                    <Dropdown
+                        itemList={headerSparklingList}
+                        btnName={"sparkling"}
+                    />
                 </div>
-                <div>
-                    <select name="whiskey" id="#">
-                        <option hidden>WHISKEY</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                    </select>
+                <div className={styles.headerListItem}>
+                    <Dropdown
+                        itemList={headerWhiskeyList}
+                        btnName={"whiskey"}
+                    />
                 </div>
-                <div>
-                    <select name="strong" id="#">
-                        <option hidden>STRONG</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                    </select>
+                <div className={styles.headerListItem}>
+                    <Dropdown
+                        itemList={headerStrongList}
+                        btnName={"strong"}
+                    />
                 </div>
-                <div>
-                    <select name="beer" id="#">
-                        <option hidden>BEER</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                    </select>
+                <div className={styles.headerListItem}>
+                    <Dropdown
+                        itemList={headerBeerList}
+                        btnName={"beer"}
+                    />
                 </div>
-                <div>CIDER</div>
-                <div>
-                    <select name="beer" id="#">
-                        <option hidden>ACCESSORIES</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                    </select>
-                </div>
-                <div>BOOKS</div>
-                <div>+</div>
+                <div className={styles.headerListItem}>CIDER</div>
+                <div className={styles.headerListItem}>
+                    <Dropdown
+                        itemList={headerAccessoriesList}
+                        btnName={"accessories"}
+                    />
+                </div >
+                <div className={styles.headerListItem}>BOOKS</div>
+                <div className={styles.headerListItem}>+</div>
             </div>
         </div>
     )

@@ -99,9 +99,12 @@ $active-color: #FC5622;
 
         border-bottom: 1px solid #000;
 
-        div {
-            height: 40px;
+        .headerListItem {
+            min-height: 40px;
             padding: 0 40px;
+
+            display: flex;
+            align-items: center;
             
             font-size: 14px;
             font-weight: 500;
