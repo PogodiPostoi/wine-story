@@ -23,15 +23,75 @@ function Header() {
                     <a href="tel:+76660852969">(666)085 29 69</a>
                 </div>
                 <div className={styles.headerInfoCurrency}>
-                    <select name="#" id="#">
+                    {/*TODO: Заменить выпадающие списки с select на окно поверх + выбор ссылки */}
+                    <select name="currency" id="#">
                         <option value="1">rur</option>
                         <option value="2">usd</option>
-                        <option value="1">eur</option>
-                        <option value="1">uah</option>
+                        <option value="3">eur</option>
+                        <option value="4">uah</option>
                     </select>
                 </div>
                 <div>account</div>
                 <div>cart</div>
+            </div>
+            <div className={styles.headerList}>
+                <div>
+                    <select name="wine" id="#">
+                        <option hidden>WINE</option>
+                        <option value="1">White</option>
+                        <option value="2">Red</option>
+                        <option value="3">Pink</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="sparkling" id="#">
+                        <option hidden>SPARKLING</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="whiskey" id="#">
+                        <option hidden>WHISKEY</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="strong" id="#">
+                        <option hidden>STRONG</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="beer" id="#">
+                        <option hidden>BEER</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                </div>
+                <div>CIDER</div>
+                <div>
+                    <select name="beer" id="#">
+                        <option hidden>ACCESSORIES</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                </div>
+                <div>BOOKS</div>
+                <div>+</div>
             </div>
         </div>
     )
