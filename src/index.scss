@@ -1,8 +1,6 @@
 @import 'nullstyle';
 
 body {
-    padding: 10px;
-
     background-color: #FBFBF9;
 }
 
@@ -22,8 +20,7 @@ $active-color: #FC5622;
 
 .wrapper {
     max-width: 1440px;
-    height: 200px;
-    margin: 0 auto;
+    margin: 10px auto;
 
     font-weight: 500;
 

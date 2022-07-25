@@ -6,4 +6,19 @@
     flex-flow: column;
 
     border: 1px solid #000;
+
+    .catalogCardName {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .catalogCardImg {
+        width: 70px;
+    }
+
+    .catalogCardArrow {
+        width: 22px;
+        height: 22px;
+    }
 }

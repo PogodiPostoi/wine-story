@@ -1,10 +1,8 @@
 import React from 'react';
 
-
 import CatalogCard from '../components/CatalogCard'
 
 function Catalog() {
-
 
 
     return (
