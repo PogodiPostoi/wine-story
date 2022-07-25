@@ -46,7 +46,8 @@ function Header() {
             </div>
             <div className={styles.headerList}>
                 <div className={styles.headerListItem}>
-                    {/*TODO: Заменить выпадающие списки с select на окно поверх + выбор ссылки */}
+                    {/* TODO: Ширину выпадающего списка брать от родительского блока*/}
+                    {/* TODO: Подумать, как сократить код с помощью .map() на этот компонент*/}
                     <Dropdown
                         itemList={headerWineList}
                         btnName={"wine"}

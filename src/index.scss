@@ -1,6 +1,8 @@
 @import 'nullstyle';
 
 body {
+    padding: 10px;
+
     background-color: #FBFBF9;
 }
 
@@ -9,16 +11,37 @@ body {
     
 }
 
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
 $active-color: #FC5622;
 
 .wrapper {
     max-width: 1440px;
     height: 200px;
-    margin: 10px auto;
+    margin: 0 auto;
 
     font-weight: 500;
 
     background-color: #fff;
     border: 2px solid #000;
     border-radius: 15px;
+}
+
+.catalog {
+    h1 {
+        padding: 10px 10px 10px 90px;
+        border-bottom: 1px solid #000;
+    }
+
+    .catalogItems {
+        padding: 90px;
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

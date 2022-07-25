@@ -15,10 +15,10 @@ function Dropdown({btnName, itemList}) {
     
     return (
         <div className={styles.dropdown}>
-            <button className={styles.dropBtn}>
+            <div className={styles.dropBtn}>
                 {`${btnName}`}
                 <img src="/img/arrow-down.png" alt="" />
-            </button>
+            </div>
             <div className={styles.dropdownContent}>
                 {renderItems(itemList)}
             </div>

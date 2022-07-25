@@ -1,0 +1,28 @@
+.pagePath {
+    height: 32px;
+    padding-left: 90px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+    border-bottom: 1px solid #000;
+
+    button {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        background: none;
+
+        &:last-of-type {
+            opacity: .5;
+        }
+    }
+
+    img {
+        width: 15px;
+        height: 15px;
+    }
+}

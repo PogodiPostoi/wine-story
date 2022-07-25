@@ -1,0 +1,9 @@
+.catalogCard {
+    min-width: 250px;
+    min-height: 250px;
+
+    display: flex;
+    flex-flow: column;
+
+    border: 1px solid #000;
+}
