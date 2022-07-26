@@ -1,0 +1,77 @@
+.footer {
+    min-height: 10px;
+
+    background-color: #fafaf8;
+
+    font-weight: 400;
+
+    border-top: 1px solid #000;
+
+    .footerMap {
+        padding: 25px 5px 25px 90px;
+
+        display: flex;
+        gap: 220px;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h3 {
+            margin: 0 0 30px;
+
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+        p {
+            margin: 5px 0;
+        }
+
+        .footerMapTel,
+        .footerMapHours {
+            margin-bottom: 20px;
+        }
+
+        .footerMapTel {
+            p:first-of-type {
+                margin-top: 0;
+            }
+
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+
+                &:first-of-type {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .footerMapAddress {
+            address {
+                font-style: normal;
+            }
+        }
+    }
+
+    .footerCopyright {
+        height: 40px;
+        padding: 5px 5px 5px 90px;
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 490px;
+
+        font-size: 13px;
+
+        border-top: 1px solid #000;
+
+        .footerCopyrightTOU {
+            text-decoration: underline;
+        }
+    }
+}

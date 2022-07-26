@@ -5,7 +5,9 @@ import './App.css';
 
 import Header from './components/Header'
 import PagePath from './components/PagePath'
+import Footer from './components/Footer'
 import Catalog from './pages/Catalog'
+
 
 export const AppContext = React.createContext({})
 
@@ -43,6 +45,7 @@ function App() {
           <Header />
           <PagePath />
           <Catalog />
+          <Footer />
         </div>
       </AppContext.Provider>
   );
