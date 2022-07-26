@@ -1,24 +1,32 @@
 .catalogCard {
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 410px;
+    min-height: 330px;
+    padding: 20px 20px;
 
     display: flex;
     flex-flow: column;
+    position: relative;
 
     border: 1px solid #000;
 
     .catalogCardName {
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 21px;
+        font-weight: 400;
         text-transform: uppercase;
     }
 
     .catalogCardImg {
-        width: 70px;
+        width: 210px;
+
+        margin: auto;
     }
 
     .catalogCardArrow {
-        width: 22px;
-        height: 22px;
+        width: 25px;
+        height: 25px;
+
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
     }
 }

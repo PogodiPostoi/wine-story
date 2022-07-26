@@ -7,7 +7,6 @@ import { AppContext } from "../../App";
 
 function CatalogCard() {
 
-    // TODO: Переверстать карточку под грид. Так проще
     const {catalogItems} = React.useContext(AppContext)
     const renderItems = (item) => {
         return(
