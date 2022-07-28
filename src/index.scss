@@ -26,20 +26,28 @@ $active-color: #FC5622;
 
     background-color: #fff;
     border: 2px solid #000;
+    border-bottom: 0px ;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
+.pageName {
+    padding: 10px 10px 10px 90px;
+    border-bottom: 1px solid #000;
+}
+
 .catalog {
-    h1 {
-        padding: 10px 10px 10px 90px;
-        border-bottom: 1px solid #000;
-    }
+    width: 100%;
+    padding: 90px;
 
     .catalogItems {
-        padding: 90px;
         
         display: flex;
         flex-wrap: wrap;
+
+        border-style: solid;
+        border-color: #000;
+        border-width: 1px 0 0 1px;
     }
 }
+

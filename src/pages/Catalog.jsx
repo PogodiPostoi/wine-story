@@ -6,12 +6,14 @@ function Catalog() {
 
 
     return (
-        <div className="catalog">
-            <h1>catalog</h1>
-            <div className="catalogItems">
-                <CatalogCard />
+        <>
+            <h1 className="pageName">catalog</h1>
+            <div className="catalog">
+                <div className="catalogItems">
+                    <CatalogCard />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

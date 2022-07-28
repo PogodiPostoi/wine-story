@@ -1,3 +1,5 @@
+$active-color: #FC5622;
+
 .footer {
     min-height: 10px;
 
@@ -46,6 +48,12 @@
 
                 &:first-of-type {
                     margin-bottom: 5px;
+                }
+
+                &:hover {
+                    color: $active-color;
+
+                    transition: color .2s ease-in-out;
                 }
             }
         }
