@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Dropdown from "../Dropdown";
 
@@ -20,8 +21,10 @@ function Header() {
             </div>
             <div className={styles.headerInfo}>
                 <div className={styles.headerInfoLogo}>
-                    <img src="/img/header/logo.png" alt="logo" />
-                    <span>winestory</span>
+                    <Link to="/">
+                        <img src="/img/header/logo.png" alt="logo" />
+                        <span>winestory</span>
+                    </Link>
                 </div>
                 <div className={styles.headerInfoSearch}>
                     <input placeholder="search"/>
@@ -45,13 +48,15 @@ function Header() {
                 <div>cart</div>
             </div>
             <div className={styles.headerList}>
-                <div className={styles.headerListItem}>
                     {/* TODO: Ширину выпадающего списка брать от родительского блока*/}
                     {/* TODO: Подумать, как сократить код с помощью .map() на этот компонент*/}
-                    <Dropdown
-                        itemList={headerWineList}
-                        btnName={"wine"}
-                    />
+                <div className={styles.headerListItem}>
+                    <Link to="/wine">
+                        <Dropdown
+                            itemList={headerWineList}
+                            btnName={"wine"}
+                        />
+                    </Link>
                 </div>
                 <div className={styles.headerListItem}>
                     <Dropdown

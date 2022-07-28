@@ -1,3 +1,5 @@
+$active-color: #FC5622;
+
 .pagePath {
     height: 32px;
     padding-left: 90px;
@@ -9,15 +11,24 @@
 
     border-bottom: 1px solid #000;
 
-    button {
+    button, 
+    p {
         font-size: 14px;
         font-weight: 500;
         text-transform: uppercase;
-
+    }
+    
+    button {
         background: none;
 
         &:last-of-type {
             opacity: .5;
+        }
+
+        &:hover {
+            color: $active-color;
+
+            transition: color .2s ease-in-out;
         }
     }
 

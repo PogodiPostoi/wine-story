@@ -1,12 +1,13 @@
 @import 'nullstyle';
 
+$active-color: #FC5622;
+
 body {
     background-color: #FBFBF9;
 }
 
 * {
     font-family: "Inter", system-ui;
-    
 }
 
 h1 {
@@ -16,7 +17,7 @@ h1 {
 
 }
 
-$active-color: #FC5622;
+
 
 .wrapper {
     max-width: 1440px;
@@ -41,7 +42,6 @@ $active-color: #FC5622;
     padding: 90px;
 
     .catalogItems {
-        
         display: flex;
         flex-wrap: wrap;
 

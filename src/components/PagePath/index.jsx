@@ -2,12 +2,23 @@ import React from 'react';
 
 import styles from "./PagePath.module.scss"
 
-function PagePath() {
+function PagePath({one, two, three}) {
     return (
         <div className={styles.pagePath}>
-            <button>home</button>
-            <img src="/img/arrow-right.png" alt="arrow" />
-            <button>catalog</button>
+            <p>{one}</p>
+            {two &&
+                <>
+                    <img src="/img/arrow-right.png" alt="arrow" />
+                    <button>{two}</button>
+                </>
+            }
+            {three &&
+                <>
+                    <img src="/img/arrow-right.png" alt="arrow" />
+                    <button>{three}</button>
+                </>
+            }
+            
         </div>
     )
 }

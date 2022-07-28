@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {Route, Routes} from 'react-router-dom'
 
 import './App.css';
 
@@ -7,6 +8,7 @@ import Header from './components/Header'
 import PagePath from './components/PagePath'
 import Footer from './components/Footer'
 import Catalog from './pages/Catalog'
+import Wine from './pages/Wine';
 
 
 export const AppContext = React.createContext({})
@@ -43,8 +45,38 @@ function App() {
         <div className="wrapper">
           
           <Header />
-          <PagePath />
-          <Catalog />
+          <Routes>
+            <Route 
+              exact path="/"
+              element={
+                <>
+                  <PagePath 
+                    one={"Home"}
+                    two={"Catalog"}
+                  />
+                  <Catalog 
+                    pageName={"catalog"}
+                  />
+                </>
+              }
+            />
+            
+            <Route 
+              exact path="/wine"
+              element={
+                <>
+                  <PagePath
+                    one={"Home"}
+                    two={"Catalog"}
+                    three={"Wine"}
+                  />
+                  <Wine 
+                    pageName={"wine"}
+                  />
+                </>
+              }
+            />
+          </Routes>
           <Footer />
         </div>
       </AppContext.Provider>

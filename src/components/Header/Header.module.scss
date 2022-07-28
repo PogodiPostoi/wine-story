@@ -37,6 +37,13 @@ $active-color: #FC5622;
             font-size: 20px;
             font-weight: 700;
             text-transform: none;
+
+            a {
+                display: flex;
+                align-items: center;
+
+                color: inherit;
+            }
         }
 
         .headerInfoSearch {

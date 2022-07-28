@@ -2,12 +2,12 @@ import React from 'react';
 
 import CatalogCard from '../components/CatalogCard'
 
-function Catalog() {
+function Catalog({pageName}) {
 
 
     return (
         <>
-            <h1 className="pageName">catalog</h1>
+            <h1 className="pageName">{pageName}</h1>
             <div className="catalog">
                 <div className="catalogItems">
                     <CatalogCard />
